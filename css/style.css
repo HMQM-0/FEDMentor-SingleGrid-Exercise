@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* Remove default padding */
+ul,
+ol {
+  padding: 0;
+}
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+/* Remove list styles on ul, ol elements with a class attribute */
+ul,
+ol {
+  list-style: none;
+}
+/* A elements that don't have a class get default styles */
+a, a:not([class]) {
+  text-decoration-skip-ink: none;
+  text-decoration: none;
+}
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/* my css*/
+body{
+  background-color: hsl(204, 43%, 93%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Karla', sans-serif;
+}
+main{
+  margin: 0 auto;
+  max-width: 1440px;
+}
+h1{
+font-size: 1.8em;
+}
+h2{
+font-size: 1.3em;
+}
+h3{
+font-size: 1.3em;
+}
+#ctaBlock{
+background-color: white;
+margin:20px auto;
+width:60vw;
+height: auto;
+border-radius: 1em;
+display: grid;
+grid-template-columns: 50fr 50fr;
+grid-template-rows: 50fr auto ;
+font-size: 16px;
+box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.2);
+}
+#ctatop{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  padding: 2em;
+}
+#ctatop h2{
+  margin: 0.5em 0;
+}
+#ctatop p{
+color:hsl(218, 22%, 67%);
+font-weight: 400;
+}
+.ctacell{
+  grid-row-start: 2;
+  grid-row-end: 3;
+  padding: 2em;
+  background-color: hsl(179, 62%, 43%);
+  color: white; 
+}
+.ctacell a{
+  color: white;
+  transition-duration: 0.4s;
+  display: block;
+  padding: 10px;
+  text-shadow: rgba(0,0,0,0.1) -1px 0, rgba(0,0,0,0.1) 0 -1px,
+  rgba(255,255,255,0.1) 1px 0, rgba(255,255,255,0.1) 0 1px,
+  rgba(0,0,0,0.1) -1px -1px, rgba(255,255,255,0.1) 1px 1px;
+}
+.ctacell h3{
+  margin-bottom: 1.5em;
+  font-weight: bold;
+}
+.ctacell p, ul, span{
+  margin-bottom: 1em;
+  font-weight: 200;
+  opacity: 0.7;
+}
+.ctacell strong{
+  font-size: 2em;
+  vertical-align:middle;
+}
+.colB{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  border-bottom-left-radius:1em;
+}
+.colC{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background-color: hsla(179, 62%, 43%, .8);
+  border-bottom-right-radius:1em;
+}
+.colC p {
+  font-weight: 200;
+}
+button{
+  width: 100%;
+  color: white;
+  border-radius: 5px;
+  display: block;
+  border: none;
+  outline:none;
+  box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.2);
+  margin: 2em 0;
+  background-color:hsl(71, 73%, 54%);
+  transition-duration: 0.4s;
+}
+button:hover{
+  background-color:hsla(71, 73%, 54%, 0.8);
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+.ctacell a:hover{
+  color:rgba(255, 255, 255, 0.623); 
+}
+/**color*/
+.cyanfont{
+  color: hsl(179, 62%, 43%); 
+}
+.brightYellowfont{
+  color:hsl(71, 73%, 54%);
+} 
+/*color-ends-*/
+@media  (max-width : 750px) {
+  #ctaBlock{
+    width:90%;
+    grid-template-rows: 100fr 100fr 100fr ;
+    margin: 20px auto;
+    }
+    .colB{
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      border-radius:0;
+    }
+    .colC{
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      grid-row-end: 4;
+      border-bottom-right-radius:1em;
+      border-bottom-left-radius:1em;
+    }
+
+}
